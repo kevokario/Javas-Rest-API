@@ -1,10 +1,12 @@
 package karioPackage;
 
+import customHTTPPackage.MyHttp;
 import java.util.Scanner;
 
 public class karioWorker {
 
     Scanner input = new Scanner(System.in);
+    String url = "http://localhost:8080/Demos/KarioRestApi.php?cat=";
 
     public void addFriends() {
         karioFrends k = new karioFrends();
@@ -21,10 +23,17 @@ public class karioWorker {
         k.setEmail(input.nextLine());
 
         String json = k.getAll();
+        url = url + "addFriends&json=" + json;
+        MyHttp ht = new MyHttp(url, json);
+        String results = ht.serverSend();
 
+//        System.out.println("+++ "
+//                + " All is Set: Server will recieve the following :\n++++++++++++++++++\n" + json + "\n"
+//                + "++++++++++++++++++\n");
         System.out.println("+++ "
-                + " All is Set: Server will recieve the following :\n++++++++++++++++++\n" + json + "\n"
+                + " All is Set: Server Response :\n++++++++++++++++++\n" + results + "\n"
                 + "++++++++++++++++++\n");
+
     }
 
     public void addLikes() {
@@ -39,8 +48,12 @@ public class karioWorker {
 
         String json = k.getAll();
 
+        url = url + "addLikes&json=" + json;
+        MyHttp ht = new MyHttp(url, json);
+        String results = ht.serverSend();
+
         System.out.println("+++ "
-                + " All is Set: Server will recieve the following :\n++++++++++++++++++\n" + json + "\n"
+                + " All is Set: Server will recieve the following :\n++++++++++++++++++\n" + results + "\n"
                 + "++++++++++++++++++\n");
 
     }
@@ -64,9 +77,6 @@ public class karioWorker {
         System.out.print("Email Address : ");
         k.setEmail(input.nextLine());
 
-        System.out.print("Age  : ");
-        k.setAge(input.nextInt());
-
         System.out.print("Username  : ");
         k.setUsername(input.nextLine());
 
@@ -76,9 +86,17 @@ public class karioWorker {
         System.out.print("Occupation Name : ");
         k.setOccupation(input.nextLine());
 
+        System.out.print("Age  : ");
+        k.setAge(input.nextInt());
+
         String json = k.getAll();
+
+        url = url + "addInfo&json=" + json;
+        MyHttp ht = new MyHttp(url, json);
+        String results = ht.serverSend();
+
         System.out.println("+++ "
-                + " All is Set: Server will recieve the following :\n++++++++++++++++++\n" + json + "\n"
+                + " All is Set: Server will recieve the following :\n++++++++++++++++++\n" + results + "\n"
                 + "++++++++++++++++++\n");
     }
 
