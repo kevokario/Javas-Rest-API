@@ -1,3 +1,4 @@
+
 import karioPackage.karioLogic;
 import java.util.Scanner;
 
@@ -17,12 +18,14 @@ public class Kario {
             int opt = input.nextInt();
 
             if (opt == 1) {
-                
+                karioLogic l = new karioLogic(1);
+                l.Brains();
             } else if (opt == 2) {
-
+                karioLogic l = new karioLogic(2);
+                l.Brains();
             } else if (opt == 3) {
-               karioLogic l = new karioLogic(3);
-               l.Brains();
+                karioLogic l = new karioLogic(3);
+                l.Brains();
             } else if (opt == 4) {
                 System.out.println("\n\n**********GoodBye!**********\n\n");
                 b = false;

@@ -47,11 +47,11 @@ public class karioInfo {
     }
 
     public String getPhone() {
-        return this.firstName;
+        return this.phone;
     }
 
     public String getEmail() {
-        return this.firstName;
+        return this.email;
     }
 
     public int getAge() {
@@ -87,7 +87,7 @@ public class karioInfo {
     }
 
     public void setEmail(String email) {
-        this.firstName = email;
+        this.email = email;
     }
 
     public void setAge(int age) {

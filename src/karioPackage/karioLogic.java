@@ -23,9 +23,9 @@ public class karioLogic {
     public void Brains() {
         int opt = getOption();
         if (opt == 1) {
-           
+           new karioWorker().addInfo();
         } else if (opt == 2) {
-
+            new karioWorker().addLikes();
         } else if (opt == 3) {
             new karioWorker().addFriends();
         }
