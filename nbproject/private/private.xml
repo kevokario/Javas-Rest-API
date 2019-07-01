@@ -3,8 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/myHTTPClass.java</file>
+            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/karioPackage/karioInfo.java</file>
+            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/karioPackage/karioLikes.java</file>
+            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/Kario.java</file>
             <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/mylogin.java</file>
+            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/karioPackage/karioLogic.java</file>
+            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/karioPackage/karioFrends.java</file>
+            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/customHTTPPackage/MyHttp.java</file>
+            <file>file:/home/kario/NetBeansProjects/Java_rest_api/src/karioPackage/karioWorker.java</file>
         </group>
     </open-files>
 </project-private>
