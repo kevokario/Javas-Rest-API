@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class karioWorker {
 
     Scanner input = new Scanner(System.in);
-    String url = "http://localhost:8080/Demos/KarioRestApi.php?cat=";
+//    String url = "http://localhost:8080/Demos/KarioRestApi.php?cat=";
+    String url = "http://kenyataekwondo.co.ke/HBD/REST_API/KarioRestApi.php?cat=";
 
     public void addFriends() {
         karioFrends k = new karioFrends();
@@ -48,7 +49,7 @@ public class karioWorker {
 
         String json = k.getAll();
 
-        url = url + "addLikes&json=" + json;
+        url = url + "addMyLikes&json=" + json;
         MyHttp ht = new MyHttp(url, json);
         String results = ht.serverSend();
 
@@ -98,6 +99,10 @@ public class karioWorker {
         System.out.println("+++ "
                 + " All is Set: Server will recieve the following :\n++++++++++++++++++\n" + results + "\n"
                 + "++++++++++++++++++\n");
+    }
+    
+    public void viewFriends(){
+        
     }
 
 }

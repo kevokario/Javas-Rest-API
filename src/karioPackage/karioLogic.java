@@ -28,6 +28,8 @@ public class karioLogic {
             new karioWorker().addLikes();
         } else if (opt == 3) {
             new karioWorker().addFriends();
+        } else if(opt == 4){
+            new karioWorker().viewFriends();
         }
     }
 }
